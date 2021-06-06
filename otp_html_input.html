@@ -25,6 +25,7 @@
         let inputField = document.createElement('input'); // Creates a new input element
         inputField.className = "w-12 h-12 bg-gray-100 border-gray-100 outline-none focus:bg-gray-200 m-2 text-center rounded focus:border-blue-400 focus:shadow-outline";
         // Do individual OTP input styling here;
+        inputField.setAttribute("type", "password"); // This is to hide the characters 
         inputField.style.cssText = "color: transparent; text-shadow: 0 0 0 gray;"; // Input field text styling. This css hides the text caret
         inputField.id = 'otp-field' + i; // Don't remove
         inputField.maxLength = 1; // Sets individual field length to 1 char
